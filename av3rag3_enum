@@ -42,6 +42,6 @@ nmap(ipAdress)
 
 port80 = input("?" )
 
-if port80 == y:
+if port80 == "y":
     dirb(ipAdress)
     nikto(ipAdress)
