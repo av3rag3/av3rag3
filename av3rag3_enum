@@ -21,7 +21,7 @@ $$  __$$ | \$$$  / $$\   $$ |$$ |     $$  __$$ |$$ |  $$ |$$\   $$ |     $$\   $
                                                  \______/                                                                                                                                                                                       
 '''
 
-def nmap(ipA):
+def nmap(ip):
 	subprocess.run(f"sudo nmap -v -sC -sV -p- -oN nmap_enum {ip}", shell=True)
 	return 
 
