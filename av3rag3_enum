@@ -36,12 +36,12 @@ def nikto(ip):
 
 print(banner)
 
-ipAdress = input("What's the ip address to enum ? ")
+target = input("What's the ip address to enum ? ")
 
-nmap(ipAdress)
+nmap(target)
 
 port80 = input("?" )
 
 if port80 == "y":
-    dirb(ipAdress)
-    nikto(ipAdress)
+    dirb(target)
+    nikto(target)
